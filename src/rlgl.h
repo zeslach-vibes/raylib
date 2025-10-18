@@ -4141,7 +4141,7 @@ void rlUnloadVertexArray(unsigned int vaoId)
     {
         glBindVertexArray(0);
         glDeleteVertexArrays(1, &vaoId);
-        TRACELOG(RL_LOG_INFO, "VAO: [ID %i] Unloaded vertex array data from VRAM (GPU)", vaoId);
+        TRACELOG(RL_LOG_TRACE, "VAO: [ID %i] Unloaded vertex array data from VRAM (GPU)", vaoId);
     }
 #endif
 }
